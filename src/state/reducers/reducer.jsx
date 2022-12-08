@@ -1,10 +1,10 @@
-import React from 'react'
 
-export const Reducer = (state=0, action) => {
-    if(action.type==='deposit'){
+
+ const Reducer = (state=0, action) => {
+    if(action.type ==='deposit'){
     return state + action.payload
     }
-    else if(action.type='withdraw'){
+    else if(action.type ==='withdraw'){
         return state - action.payload
     }
     else{
@@ -13,3 +13,4 @@ export const Reducer = (state=0, action) => {
 
 
 }
+export default Reducer
